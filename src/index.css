@@ -2,8 +2,17 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+  background:#f3f4f6;
+}
+/* #e5e7eb */
+
 body {
   font-family: "Inter", sans-serif;
+}
+
+a.active {
+  color: #4300FF;
 }
 
 @plugin "daisyui/theme" {

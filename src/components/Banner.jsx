@@ -3,19 +3,23 @@ import Mahbub from "../assets/mahbub-alam.png";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { BsCircleFill } from "react-icons/bs";
+import SocialIcons from "./SocialIcons";
 
 const Banner = () => {
   return (
     <div className="flex flex-col gap-8 md:flex-row justify-between min-h-[40vh] text-[var(--color-secondary)] px-6 lg:px-8">
 
           <div className="flex-1 flex justify-center md:justify-end items-start">
-              <div className="relative bg-[var(--color-secondary)] rounded-[50%] flex justify-center w-[300px] h-[300px] md:w-[400px] md:h-[400px] overflow-hidden">
+            <div className="border-2 border-[var(--color-secondary)] p-4 rounded-[50%]">
+              <div className="relative bg-[var(--color-secondary)] rounded-[50%] flex justify-center w-[270px] h-[270px]  md:w-[335px] md:h-[335px] lg:w-[375px] lg:h-[375px] overflow-hidden">
         <img
           className="w-full h-full object-cover object-[center_5%] rounded-[50%]"
           src={Mahbub}
           alt="Mahbub"
         />
-         <div className="absolute inset-0 rounded-[50%] bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+        
+         <div className="absolute inset-0 rounded-[50%] bg-gradient-to-t from-[#0E2148]/90 via-transparent to-transparent"></div>
+      </div>
       </div>
       </div>
       <div className="flex flex-col gap-10 items-start flex-1 md:-order-1">
@@ -34,7 +38,7 @@ const Banner = () => {
   <div className="space-y-4">
   <div className="flex items-center gap-2 text-base">
     <IoLocationSharp className="text-[var(--color-accent)] text-xl" />
-    <span>Satkhira, Bangladesh</span>
+    <span>Jessore, Bangladesh</span>
   </div>
 
   {/* Availability */}
@@ -45,17 +49,7 @@ const Banner = () => {
   </div>
 
     {/* Social icons */}
-  <div className="flex items-center gap-5 text-2xl mt-2">
-    <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-accent)] transition-all">
-      <FaGithub />
-    </a>
-    <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-accent)] transition-all">
-      <FaLinkedin />
-    </a>
-    <a href="https://twitter.com/your-twitter-handle" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-accent)] transition-all">
-      <FaTwitter />
-    </a>
-  </div>
+    <SocialIcons />
 </div>
     </div>
   );

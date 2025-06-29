@@ -4,7 +4,7 @@ import { SiMongodb, SiExpress, SiFirebase } from "react-icons/si"
 
 const Skills = () => {
     return (
-<section className="flex flex-col gap-6 my-16 lg:my-24 bg-gray-50 shadow px-6 lg:px-8 py-12">
+<section className="flex flex-col gap-6 my-16 lg:my-24 bg-gray-50 px-6 lg:px-8 py-16 md:py-24">
   {/* Title */}
   <h2 className="text-2xl font-bold text-[var(--color-secondary)] text-center">My Skill Set</h2>
 
