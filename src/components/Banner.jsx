@@ -11,7 +11,7 @@ const Banner = () => {
 
           <div className="flex-1 flex justify-center md:justify-end items-start">
             <div className="border-2 border-[var(--color-secondary)] p-4 rounded-[50%]">
-              <div className="relative bg-[var(--color-secondary)] rounded-[50%] flex justify-center w-[270px] h-[270px]  md:w-[335px] md:h-[335px] lg:w-[375px] lg:h-[375px] overflow-hidden">
+              <div className="relative bg-[var(--color-secondary)] rounded-[50%] flex justify-center w-[235px] h-[235px] sm:w-[285px] sm:h-[285px] md:w-[335px] md:h-[335px] lg:w-[375px] lg:h-[375px] overflow-hidden">
         <img
           className="w-full h-full object-cover object-[center_5%] rounded-[50%]"
           src={Mahbub}

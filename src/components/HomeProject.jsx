@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const HomeProject = ({projects}) => {
     return (
-      <div className="space-y-7 bg-gray-50 py-16 md:py-24 px-6 lg:px-8">
+      <div className="space-y-7 bg-[var(--color-accent-two)] py-16 md:py-24 px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-[var(--color-secondary)] text-center">
           Projects
         </h2>

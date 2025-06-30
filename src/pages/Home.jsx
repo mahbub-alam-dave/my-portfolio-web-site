@@ -22,7 +22,7 @@ const Home = () => {
     fetchData();
   }, []);
   return (
-    <div className="pt-32 lg:pt-44">
+    <div className="pt-24">
       <Banner />
       <div className="bg-gray-50 space-y-12 w-full px-6 lg:px-8 py-16 md:py-24 mt-16">
         <h2 className="text-2xl text-center font-bold text-[var(--color-secondary)]">

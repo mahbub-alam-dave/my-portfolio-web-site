@@ -3,7 +3,7 @@ import AboutMe from '../components/AboutMe';
 
 const About = () => {
     return (
-        <div className='px-6 lg:px-8 mt-16 py-32'>
+        <div className='px-6 lg:px-8 py-18'>
             <AboutMe showFull={true}/>
         </div>
     );
