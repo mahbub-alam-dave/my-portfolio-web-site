@@ -32,7 +32,7 @@ const Header = () => {
             About
           </NavLink>
         </nav>
-        <a href="/demoCV.pdf" download>
+        <a href="/resume(mahbub-alam).pdf" download>
         <button className="px-6 py-4 rounded-md font-semibold bg-[var(--color-primary)] dark:bg-[var(--color-primary-dark)]  text-[var(--color-text-primary-dark)]">
           Download CV
         </button>
