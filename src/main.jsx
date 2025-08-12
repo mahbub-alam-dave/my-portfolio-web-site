@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Projects from './pages/Projects.jsx'
 import ProjectDetails from './pages/ProjectDetails.jsx'
+import ContextProvider from './contexts/ContextProvider.jsx'
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ContextProvider>
     <RouterProvider router={router}></RouterProvider>
+    </ContextProvider>
   </StrictMode>,
 )

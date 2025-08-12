@@ -2,27 +2,36 @@
   {
     "id": "001",
     "title": "Parcel Management System",
-    "description": "A full stack parcel tracking app with real-time status updates and payment gateway integration.",
+    "description": "A comprehensive full-stack parcel tracking application that allows users to send, track, and manage parcels in real time. The platform integrates payment gateway functionality for seamless transactions and provides instant updates on delivery status through a live tracking system. Admins can manage parcel requests, delivery personnel, and user queries, making the entire process more efficient and transparent.",
     "images": [
       "https://i.ibb.co/jv60GD8p/parcel-management-one.jpg",
       "https://i.ibb.co/6JRBq6zX/parcel-management-three.jpg",
       "https://i.ibb.co/ycpsrz0Q/parcel-management-two.jpg"
     ],
     "technologies": ["React", "Node.js", "MongoDB", "Tailwind"],
+    "features": [
+      "Real-time parcel tracking with live updates",
+      "Payment gateway integration for secure transactions",
+      "Role-based authentication for users and admins",
+      "Parcel status management with automated notifications",
+      "Responsive and mobile-friendly UI"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "2 Months",
     "liveLink": "https://your-live-site-link.com",
     "codeLink": "https://github.com/your-repo-link"
   },
   {
     "id": "002",
     "title": "Recipe Booking Website",
-    "description": "Recipe Book is virtual platform that showcased recipes all over the world for all food enthusiasts and People have access to add, manage, update and delete recipes and also users explore reactions on their added recipes to Recipe Book.",
+    "description": "A dynamic recipe-sharing and booking platform designed for food lovers worldwide. Users can explore recipes, add their own, update details, and even delete them when needed. Each recipe allows interactive features such as likes and comments, enabling community engagement. The platform supports secure authentication and an intuitive search system to help users quickly find their favorite dishes.",
     "images": [
       "https://i.ibb.co/Cs8yjQvX/study-mate-one.jpg",
       "https://i.ibb.co/svhvcwc1/study-mate-three.jpg",
       "https://i.ibb.co/JRkNxYdn/study-mate-two.jpg"
     ],
     "technologies": [
-      "Html",
+      "HTML",
       "Tailwind CSS",
       "JavaScript",
       "React",
@@ -31,20 +40,29 @@
       "Express",
       "Firebase"
     ],
+    "features": [
+      "Add, update, and delete recipes with ease",
+      "User authentication and profile management",
+      "Interactive likes and comments system",
+      "Search and filter recipes by category or name",
+      "Responsive design for all devices"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "1.5 Months",
     "liveLink": "https://elaborate-biscuit-2526d2.netlify.app/",
     "codeLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-mahbub-alam-dave"
   },
   {
     "id": "003",
     "title": "Lawyer Booking Application (Law BD)",
-    "description": "Law BD a Bangladeshi lawyer booking web application displaying lawyers info with their availability. People Can schedule metting or cancel scheduled metting with any lawyers if they are available. In the near update Law BD will have dedicated role based registration system where any users can resgister to our application by their own fullfilling our conditions. Also their will be different payment system available to pay lawyer fee for the users and more",
+    "description": "Law BD is a Bangladeshi lawyer booking web application that connects clients with verified lawyers based on availability. Users can browse lawyer profiles, schedule meetings, and cancel appointments with ease. Upcoming updates include a role-based registration system, secure payment methods for lawyer fees, and advanced filtering to find the right legal expert. This platform aims to make legal services more accessible and organized.",
     "images": [
       "https://i.ibb.co/Lz2d5GPs/law-bd-one.jpg",
       "https://i.ibb.co/9HhLbjYc/law-bd-two.jpg",
       "https://i.ibb.co/6cSyVxHh/law-bd-three.jpg"
     ],
     "technologies": [
-      "Html",
+      "HTML",
       "Tailwind CSS",
       "JavaScript",
       "React",
@@ -53,20 +71,29 @@
       "Express",
       "Firebase"
     ],
+    "features": [
+      "Browse and filter lawyers by expertise and availability",
+      "Book and cancel appointments in real time",
+      "Profile details with contact and experience information",
+      "Secure authentication for clients and lawyers",
+      "Scalable structure for future payment integration"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "1 Month",
     "liveLink": "https://brilliant-meringue-02fc36.netlify.app/",
     "codeLink": "https://github.com/programming-hero-web-course1/b11a8-router-booking-mahbub-alam-dave"
   },
   {
     "id": "004",
     "title": "Study Mate",
-    "description": "Study Mate is an online web application focusing to build a community for students. Here at the Study Mate students can explore tasks submitted by others, add tasks by their own, participate in tasks, find study partners. The environment of the Study Mate is totally aligned to study. No more wastage of times, distruction, no loses, only focused with 100% of productivity",
+    "description": "Study Mate is a productivity-focused online platform that helps students find study partners, join challenges, and stay engaged in academic activities. Users can create tasks, join others' tasks, and keep track of their study progress. The platform fosters a distraction-free environment designed to maximize productivity and build a supportive academic community.",
     "images": [
       "https://i.ibb.co/Cs8yjQvX/study-mate-one.jpg",
       "https://i.ibb.co/svhvcwc1/study-mate-three.jpg",
       "https://i.ibb.co/JRkNxYdn/study-mate-two.jpg"
     ],
     "technologies": [
-      "Html",
+      "HTML",
       "Tailwind CSS",
       "JavaScript",
       "React",
@@ -75,7 +102,17 @@
       "Express",
       "Firebase"
     ],
+    "features": [
+      "Create, join, and manage study tasks",
+      "Find and connect with study partners",
+      "Track progress with task completion status",
+      "Secure login and user profiles",
+      "Optimized UI for distraction-free study sessions"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "1.5 Months",
     "liveLink": "https://fir-advance-project.web.app/",
     "codeLink": "https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-mahbub-alam-dave"
   }
 ]
+

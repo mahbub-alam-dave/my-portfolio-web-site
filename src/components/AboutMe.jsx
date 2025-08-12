@@ -8,24 +8,24 @@ import myImage from '../assets/mahbub-alam.png'
 
 const AboutMe = ({showFull}) => {
     return (
-<section className="flex flex-col items-center md:flex-row gap-8">
+<section className="max-w-7xl mx-auto flex flex-col items-center md:flex-row gap-8">
       {/* Text Content */}
-      <div className="flex-1 flex flex-col gap-4">
-        <h2 className="text-xl font-bold text-[var(--color-secondary)]">A Brief overview About Myself</h2>
+      <div className="flex-1 flex flex-col gap-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">A Brief overview About Myself</h2>
 
-        <p className="text-base md:text-lg leading-relaxed text-justify">
+        <p className="text-base md:text-lg leading-relaxed text-justify text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
           I'm Mahbub Alam — a passionate <strong>MERN Stack Developer</strong> focused on crafting fast, interactive, and scalable web applications.
           With experience in technologies like React, Node.js, MongoDB, and Express.js, I enjoy solving real-world problems through code and building intuitive user experiences.
         </p>
 
         {showFull && (
           <>
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base md:text-lg leading-relaxed text-justify text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
               I have a strong foundation in frontend development using modern tools like React and Tailwind CSS, coupled with backend skills in Node.js and MongoDB for building RESTful APIs and full stack applications.
               I'm always eager to learn new technologies, keep up with industry trends, and work on challenging projects that push my boundaries.
             </p>
 
-            <p className="text-base md:text-lg leading-relaxed text-justify">
+            <p className="text-base md:text-lg leading-relaxed text-justify text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
               Beyond coding, I'm passionate about clean UI/UX design principles, performance optimization, and delivering projects that not only work well but look great and feel smooth.
               I'm currently open to exciting freelance, remote, or collaborative opportunities.
             </p>
@@ -37,7 +37,7 @@ const AboutMe = ({showFull}) => {
           <div>
             <Link
               to="/about-me"
-              className="btn bg-[var(--color-accent)] text-[var(--color-primary)] mt-2"
+              className="px-4 py-3 rounded-sm bg-[var(--color-primary)] dark:bg-[var(--color-primary-dark)] text-[var(--color-text-primary-dark)] mt-4"
             >
               View Details
             </Link>

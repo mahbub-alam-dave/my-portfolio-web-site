@@ -22,10 +22,10 @@ const Home = () => {
     fetchData();
   }, []);
   return (
-    <div className="pt-24">
+    <div className="pt-24 ">
       <Banner />
-      <div className="bg-gray-50 space-y-12 w-full px-6 lg:px-8 py-16 md:py-24 mt-16">
-        <h2 className="text-2xl text-center font-bold text-[var(--color-secondary)]">
+      <div className="bg-[var(--color-bg-card)] dark:bg-[var(--color-bg-card-dark)] space-y-12 w-full px-5 md:px-6 py-16 md:py-24 mt-16">
+        <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">
           About Me
         </h2>
         <AboutMe showFull={false} />

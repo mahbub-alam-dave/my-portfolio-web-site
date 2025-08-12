@@ -6,14 +6,19 @@ const Projects = () => {
     const projects = useLoaderData()
 
     return (
-        <div className='flex flex-col gap-12 px-6 lg:px-8 py-18 pb-16 bg-[var(--color-accent-two)]'>
-                        <h2 className="text-xl font-bold text-[var(--color-secondary)]">All Projects</h2>
+        <div className='px-5 md:px-6'>
+        <div className='max-w-7xl mx-auto flex flex-col gap-12  py-18 pb-16 '>
+                        <div className='space-y-3'>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">My Recent Projects</h2>
+                            <p className='text-base md:text-lg text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]'>Projects that I created recently implementing my hands on experience on MERN technologies.</p>
+                        </div>
             {
                 projects.map((project, index) => <ProjectCard
                     key={project.id}
                     project={project}
                     index={index} />)
             }
+        </div>
         </div>
     );
 };
