@@ -27,8 +27,11 @@ const router = createBrowserRouter([
         element: <Projects />,
         loader: () => fetch('/Projects.json'),
         hydrateFallbackElement: <span className='loading loading-spinner'></span>
-      },
-      {
+      }
+
+    ]
+  },
+        {
         path: '/project/:title',
         element: <ProjectDetails />,
         loader: async ({params}) => {
@@ -45,8 +48,6 @@ const router = createBrowserRouter([
         },
         hydrateFallbackElement: <span className='loading loading-spinner'></span>
       }
-    ]
-  }
 ])
 
 createRoot(document.getElementById('root')).render(

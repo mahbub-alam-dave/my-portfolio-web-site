@@ -1,6 +1,60 @@
+
 [
   {
     "id": "001",
+    "title": "Tour Management and Guiding Application",
+    "description": "A full-stack Tour management and guiding application that allows users to book any trip packages, choose guide by their own, make secure payment and manage their bookings. The platform integrates payment gateway functionality for seamless transactions. There is role based dashboard integrated ensuring 100% security for both admin, guide and travellers. Admin have the access to control application system and real time data of any occourance by guides or travellers",
+    "images": [
+      "https://i.ibb.co.com/n8wVP3D1/shot-four.jpg",
+      "https://i.ibb.co.com/MySDJ084/shot-two.jpg",
+      "https://i.ibb.co.com/1Y4ZjQ0t/shot-three.jpg"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "Tailwind"],
+    "features": [
+      "Real-time parcel tracking with live updates",
+      "Payment gateway integration for secure transactions",
+      "Role-based authentication for users and admins",
+      "Parcel status management with automated notifications",
+      "Responsive and mobile-friendly UI"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "2 Months",
+    "liveLink": "https://spiffy-cheesecake-f8d216.netlify.app/",
+    "codeLink": "https://github.com/mahbub-alam-dave/parcel-management-client"
+  },
+    {
+    "id": "002",
+    "title": "Study Mate",
+    "description": "Study Mate is a productivity-focused online platform that helps students find study partners, join challenges, and stay engaged in academic activities. Users can create tasks, join others' tasks, and keep track of their study progress. The platform fosters a distraction-free environment designed to maximize productivity and build a supportive academic community.",
+    "images": [
+      "https://i.ibb.co.com/vxRZrHyr/shot-one.jpg",
+      "https://i.ibb.co.com/LdZhw7hm/shot-two.jpg",
+      "https://i.ibb.co.com/XZztBt6t/shot-four.jpg"
+    ],
+    "technologies": [
+      "HTML",
+      "Tailwind CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Firebase"
+    ],
+    "features": [
+      "Create, join, and manage study tasks",
+      "Find and connect with study partners",
+      "Track progress with task completion status",
+      "Secure login and user profiles",
+      "Optimized UI for distraction-free study sessions"
+    ],
+    "role": "Full Stack Developer (MERN)",
+    "duration": "1.5 Months",
+    "liveLink": "https://brilliant-donut-fd421b.netlify.app/",
+    "codeLink": "https://github.com/mahbub-alam-dave/studymate-client"
+  },
+  {
+    "id": "003",
     "title": "Parcel Management System",
     "description": "A comprehensive full-stack parcel tracking application that allows users to send, track, and manage parcels in real time. The platform integrates payment gateway functionality for seamless transactions and provides instant updates on delivery status through a live tracking system. Admins can manage parcel requests, delivery personnel, and user queries, making the entire process more efficient and transparent.",
     "images": [
@@ -18,11 +72,11 @@
     ],
     "role": "Full Stack Developer (MERN)",
     "duration": "2 Months",
-    "liveLink": "https://your-live-site-link.com",
-    "codeLink": "https://github.com/your-repo-link"
+    "liveLink": "https://magnificent-tartufo-147c46.netlify.app/",
+    "codeLink": "https://github.com/mahbub-alam-dave/parcel-management-client"
   },
   {
-    "id": "002",
+    "id": "004",
     "title": "Recipe Booking Website",
     "description": "A dynamic recipe-sharing and booking platform designed for food lovers worldwide. Users can explore recipes, add their own, update details, and even delete them when needed. Each recipe allows interactive features such as likes and comments, enabling community engagement. The platform supports secure authentication and an intuitive search system to help users quickly find their favorite dishes.",
     "images": [
@@ -49,11 +103,11 @@
     ],
     "role": "Full Stack Developer (MERN)",
     "duration": "1.5 Months",
-    "liveLink": "https://elaborate-biscuit-2526d2.netlify.app/",
-    "codeLink": "https://github.com/Programming-Hero-Web-Course4/b11a10-client-side-mahbub-alam-dave"
+    "liveLink": "https://fascinating-queijadas-46bd45.netlify.app/",
+    "codeLink": "https://github.com/mahbub-alam-dave/delicia"
   },
   {
-    "id": "003",
+    "id": "005",
     "title": "Lawyer Booking Application (Law BD)",
     "description": "Law BD is a Bangladeshi lawyer booking web application that connects clients with verified lawyers based on availability. Users can browse lawyer profiles, schedule meetings, and cancel appointments with ease. Upcoming updates include a role-based registration system, secure payment methods for lawyer fees, and advanced filtering to find the right legal expert. This platform aims to make legal services more accessible and organized.",
     "images": [
@@ -81,38 +135,8 @@
     "role": "Full Stack Developer (MERN)",
     "duration": "1 Month",
     "liveLink": "https://brilliant-meringue-02fc36.netlify.app/",
-    "codeLink": "https://github.com/programming-hero-web-course1/b11a8-router-booking-mahbub-alam-dave"
-  },
-  {
-    "id": "004",
-    "title": "Study Mate",
-    "description": "Study Mate is a productivity-focused online platform that helps students find study partners, join challenges, and stay engaged in academic activities. Users can create tasks, join others' tasks, and keep track of their study progress. The platform fosters a distraction-free environment designed to maximize productivity and build a supportive academic community.",
-    "images": [
-      "https://i.ibb.co/Cs8yjQvX/study-mate-one.jpg",
-      "https://i.ibb.co/svhvcwc1/study-mate-three.jpg",
-      "https://i.ibb.co/JRkNxYdn/study-mate-two.jpg"
-    ],
-    "technologies": [
-      "HTML",
-      "Tailwind CSS",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Firebase"
-    ],
-    "features": [
-      "Create, join, and manage study tasks",
-      "Find and connect with study partners",
-      "Track progress with task completion status",
-      "Secure login and user profiles",
-      "Optimized UI for distraction-free study sessions"
-    ],
-    "role": "Full Stack Developer (MERN)",
-    "duration": "1.5 Months",
-    "liveLink": "https://fir-advance-project.web.app/",
-    "codeLink": "https://github.com/Programming-Hero-Web-Course4/b11a11-client-side-mahbub-alam-dave"
+    "codeLink": "https://github.com/mahbub-alam-dave/law-bd-application"
   }
+
 ]
 

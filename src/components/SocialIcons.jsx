@@ -4,12 +4,12 @@ import { GoDash } from "react-icons/go";
 
 const SocialIcons = () => {
   return (
-    <div className="flex items-center gap-4 text-2xl mt-6 text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
+    <div className="flex items-center gap-4 text-2xl text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)]">
       <div className="flex justify-end items-end">
         &mdash;
       </div>
       <a
-        href="https://github.com/your-github-username"
+        href="https://github.com/mahbub-alam-dave/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-[var(--color-accent)] transition-all"
@@ -17,7 +17,7 @@ const SocialIcons = () => {
         <FaGithub />
       </a>
       <a
-        href="https://linkedin.com/in/your-linkedin-username"
+        href="https://www.linkedin.com/in/md-mahabub-alam-web-dave/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-[var(--color-accent)] transition-all"
@@ -25,7 +25,7 @@ const SocialIcons = () => {
         <FaLinkedin />
       </a>
       <a
-        href="https://twitter.com/your-twitter-handle"
+        href="https://www.linkedin.com/in/md-mahabub-alam-web-dave/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-[var(--color-accent)] transition-all"

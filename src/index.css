@@ -11,6 +11,20 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #030712; /* deep dark base */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px; /* size of the squares */
+  background-position: center;
+}
+
+:root {
+  --grid-color: rgba(0, 0, 0, 0.05); /* light mode → faint black lines */
+}
+
+.dark {
+  --grid-color: rgba(255, 255, 255, 0.05); /* dark mode → faint white lines */
 }
 
 .logo-font {
@@ -38,7 +52,8 @@ a.active {
   default: true;
   /* --color-primary: #3120E0; */
   --color-primary: #155dfc;
-  --color-primary-dark: #193cb8;
+  --color-primary-dark: #155dfc;
+  /* --color-primary-dark: #193cb8; */
 
   /* #f3f4f6 #f9fafb */
   --color-text-primary: #000000;

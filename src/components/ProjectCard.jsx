@@ -7,25 +7,26 @@ import { FaGithub } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ project, index }) => {
-  const { title, description, images, technologies, liveLink, codeLink } = project || {};
+  const { title, description, images, technologies, liveLink, codeLink } =
+    project || {};
 
   const settings = {
-    dots: true, // Added dots for better UX
+    dots: false, // Added dots for better UX
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
-    arrows: false,
-    pauseOnHover: true
+    autoplay: false,
+    pauseOnHover: true,
   };
 
   return (
+    // md:flex-row
+    //    (index + 1) % 2 ? "md:flex-row-reverse" : ""
     <motion.div
-      className={`flex flex-col md:flex-row ${
+      className={`w-full h-auto flex bg-[var(--color-bg-card)] dark:bg-[var(--color-bg-card-dark)] rounded-2xl flex-col ${
         (index + 1) % 2 ? "md:flex-row-reverse" : ""
-      } items-center gap-10 py-8 md:py-14`}
+      } shadow-lg`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -33,16 +34,13 @@ const ProjectCard = ({ project, index }) => {
     >
       {/* Image Section */}
       <motion.div
-        className="flex-1 w-full md:w-[50%] rounded-xl shadow-lg overflow-hidden"
-        whileHover={{ scale: 1.01 }}
+        className=" w-full rounded-t-2xl overflow-hidden"
+        // whileHover={{ scale: 1.01 }}
         transition={{ duration: 0.3 }}
       >
         <Slider {...settings}>
           {images.map((image, idx) => (
-            <div
-              key={idx}
-              className="relative group h-[400px] md:h-[450px] cursor-pointer"
-            >
+            <div key={idx} className="relative group h-[350px] cursor-pointer">
               <img
                 src={image}
                 alt={title}
@@ -75,9 +73,9 @@ const ProjectCard = ({ project, index }) => {
       </motion.div>
 
       {/* Text Section */}
-      <div className="flex-1 flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 p-4 sm:p-6 lg:p-4 xl:p-8">
         <motion.h3
-          className="text-2xl md:text-3xl font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]"
+          className="text-2xl  font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -92,30 +90,37 @@ const ProjectCard = ({ project, index }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          {description}
+          {description.length < 150
+            ? description
+            : description.slice(0, 150) + "..."}
         </motion.p>
 
         {/* Technologies */}
         <motion.div
-          className="flex flex-wrap gap-2 mt-2"
+          className="flex flex-wrap gap-2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          {technologies.map((tech, idx) => (
+          {technologies.slice(0, 3).map((tech, idx) => (
             <span
               key={idx}
-              className="px-3 py-1 rounded-full border border-gray-300 dark:border-gray-600 text-sm font-medium text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] shadow-sm bg-white dark:bg-gray-800"
+              /* className=" border border-gray-300 dark:border-gray-600 text-sm font-medium text-[var(--color-text-secondary)] dark:text-[var(--color-text-secondary-dark)] shadow-sm bg-white dark:bg-gray-800" */
+              className="px-3 py-1 border border-blue-300 text-blue-400 dark:border-blue-400 dark:text-blue-300 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
           ))}
+          {technologies.length > 3 && (
+            <span className="px-3 py-1 border border-blue-300 text-blue-400 dark:border-blue-400 dark:text-blue-300 rounded-full text-sm font-medium">
+              etc.
+            </span>
+          )}
         </motion.div>
 
         {/* Details Button */}
         <motion.div
-          className="mt-5"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -123,9 +128,10 @@ const ProjectCard = ({ project, index }) => {
         >
           <Link
             to={`/project/${project.title.toLowerCase().split(" ").join("-")}`}
-            className="px-5 py-3 rounded-lg bg-[var(--color-primary)] dark:bg-[var(--color-primary-dark)] text-white font-semibold shadow hover:scale-105 transition-transform"
           >
-            View Details
+            <button className="px-4 py-2 rounded-full bg-[var(--color-primary)] dark:bg-[var(--color-primary-dark)] text-white font-semibold shadow hover:scale-105 transition-transform">
+              View Details
+            </button>
           </Link>
         </motion.div>
       </div>

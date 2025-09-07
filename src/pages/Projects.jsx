@@ -5,6 +5,8 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
     const projects = useLoaderData()
 
+    console.log(projects)
+
     return (
         <div className='px-5 md:px-6'>
         <div className='max-w-7xl mx-auto flex flex-col gap-12  py-18 pb-16 '>

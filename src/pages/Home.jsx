@@ -15,25 +15,27 @@ const Home = () => {
     const fetchData = async () => {
       const res = await fetch("/Projects.json");
       const data = await res.json();
-      const homePageProject = data.slice(0, 3);
+      const homePageProject = data.slice(0, 4);
       setProjects(homePageProject);
     };
 
     fetchData();
   }, []);
   return (
-    <div className="pt-24 ">
+    <div className="pt-[90px] ">
       <Banner />
-      <div className="bg-[var(--color-bg-card)] dark:bg-[var(--color-bg-card-dark)] space-y-12 w-full px-5 md:px-6 py-16 md:py-24 mt-16">
+      {/* bg-[var(--color-bg-card)] dark:bg-[var(--color-bg-card-dark)] */}
+{/*       <div className="space-y-12 w-full px-5 md:px-6 py-16 md:py-24 mt-16">
         <h2 className="text-2xl md:text-3xl text-center font-bold text-[var(--color-text-primary)] dark:text-[var(--color-text-primary-dark)]">
           About Me
         </h2>
         <AboutMe showFull={false} />
-      </div>
+      </div> */}
+      <AboutMe />
       <Skills />
       <Education />
       <HomeProject projects={projects} />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
